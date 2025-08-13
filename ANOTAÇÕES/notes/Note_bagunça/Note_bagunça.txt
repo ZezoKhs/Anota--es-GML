@@ -1,0 +1,113 @@
+-LAYER ASSETS(layers)
+-serve para colocar sprites na room
+
+
+-KEY DOWN/PRESSED/UP LETTERS(eventos)
+-serve para mandar comando em letras especificas do teclado
+
+
+-MOVE_BOUNCE_SOLID(código)
+-faz o obj quicar em outros objs solidos
+-é um valor booleano
+-as mascaras de colisão dos obj tem que estar configuradas com o tipo precise slow
+-é normalmente utilizado no evento colision 
+
+
+-MOVE_BOUNCE_ALL(código)
+-faz o obj quicarem em qualquer coisa
+-é um valor booleano
+-é normalmente utilizado no evento colision 
+
+
+-AUDIO_PLAY_SOUND(som)
+-é um comando que emite sons
+-OBS:seja a aula 29 do modulo 8
+
+
+-AUDIO_PAUSE_SOUND(som)
+-pausa todos os sons antes do que for selecionado nas ()
+-evita que os sons fiquem um em cima do outro
+
+
+-RANDOM(códigos)
+-gera um numero decimal aletorio entre 0 e o numero escolhido (o numero escolhido não pode ser gerado)
+
+
+-IRANDOM
+-gera um numero inteiro aleatorio entre 0 e o numero escolhido (o numero escolhido pode ser gerado)
+
+
+-RANDOM_RANGE
+-Gera um número decimal aleatorio entre os numeros escolhidos
+
+
+-IRANDOM_RANGE
+-Gera um número inteiro aleatorio entre os numeros escolhidos
+
+
+-CHOOSE
+-escolhe de forma aleatoria uma dos valores escolhidos
+-vc pode definir infinitos valores
+
+
+-SEEDS
+-é um conjunto de numeros "aleatorios" que o computador usa quando um codigo pede um numero "aleatorio"
+-esses numeros seguem uma sequencia, oque portanto os tornam numeros não aleatorios
+-aula 32 modulo 8
+
+
+-RAMDOMIZE / RANDOMISE
+-serve para mudar a seed do jogo de forma aleatoria 
+-o ideal é usar esse comando no scipt, pq assim ele vai iniciar antes de tudo
+
+
+-RANDOM_SET_SEED
+-serve para definir uma seed especifica
+
+
+-PLACE_MEETING
+-verifica se uma instância do objeto atual está colidindo com uma instância de outro objeto
+-x e y: Representam as coordenadas onde você deseja verificar a colisão. Geralmente, você coloca a posição atual do objeto
+-devolve um valor booleano
+
+
+-INSTANCE_EXISTS
+-verifica de o objeto ou um id existe no jogo
+
+
+
+-INSTANCE_DESTROY
+-destroi uma instancia, apaga ima instancia
+
+
+
+-EXIT
+-fecha um vento fazndo com que ele não funcione mais
+
+
+
+-UNDERFINED 
+-faz uma variavel ter valor indefinido
+
+
+-HSPEED
+-é uma variavel interna 
+-define a velocidade horizontal
+
+
+-VSPEED
+-é uma variavel interna 
+-define a velocidade vertical
+
+
+
+
+
+
+
+
+
+
+
+
+

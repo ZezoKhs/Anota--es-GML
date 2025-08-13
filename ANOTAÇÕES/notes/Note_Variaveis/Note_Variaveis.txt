@@ -1,0 +1,109 @@
+VARIAVEIS: são palavras q guardam valores. São informações que variam e que podem ser usadas varias vezes
+
+
+TIPOS DE VARIAVEIS:
+
+obs: quando quisermos iniciar uma varivel sem valor definifo basta colocar "noone"  no lugar do valor.
+noone =  no one =  ninguem
+ex: global.carros = noone
+
+- Variaveis de Objetos: 
+
+-são aquelas de cor azul
+-servem para definir carcteristicas do objeto ( velocidade, tamanho, nome), qualquer atributo
+-existem em todos os eventos dpois que ela foi iniciada
+-pode ter valores diferentes para cada instancia daquele objeto
+
+
+- Variable Definitions:
+
+- são iguais as antriores,porem, podem ser usadas para definir dados de um objeto 
+  e modificar esses dados em cada instancia
+- E elas podem ser inicializadas de forma difente:
+- clicando numa instancia de um objeto, indo na opção Variable Definitions podemos criar 
+  variaveis para essa instacia em especifico. Essas variaveis podem conter qualuqer valor (strings, real, intege, bool)
+- essa opção pode ser vizualizada tanto no inspetor quanto no workspace
+OBS: caso tenha duvidas va na aula 11 do modulo 6
+
+
+- Variaveis internas (built in variables):
+
+-são aquelas de cor verde
+-são as variaveis internas, nativas do game maker
+-são variaveis que se criam sozinhas 
+
+EX: 
+X e Y (posições dos instancias), speed (velocidade), image_bland(cor), 
+image_angle(rotação), direction(direção do movimento),id(nome da instancia) de um objeto são variaveis internas 
+
+
+
+- Variaveis temporarias: 
+
+-são aquelas de cor amarela
+-são aquelas que so funcionam no evento em que foi criada
+-para criar essa varivel é preciso coloca a palavra "var" antes do seu nome, um espaço, e um "_" antes da palavra
+-são uteis quando queremos usar uma informação apenas em um momento, facilitando a compreensão
+
+EX: var _nome = "rhuan"
+
+
+
+- Variaveis de Controle (flag) :
+
+- são usadas como indicadores booleanos (verdadeiro ou falso) 
+  para representar estados ou condições específicas no seu jogo.
+- Elas são úteis para simplificar a lógica do jogo e controlar o fluxo de eventos.
+- veja a aula 21 do modulo 6 para mais informações !
+
+
+
+- Variaveis globais:
+
+-são aquelas de cor rosa
+-para criar essa varivel é preciso coloca a palavra "global." antes do nome
+-essas funcionam em todas as instancias que estiver em uma room 
+-todas as instancias da room podem acessar essa variavel
+-em geral, essas variaveis são informacoes do JOGO e não de um objeto em especifico
+-é indicado que essas variaveis sejam criadas em scripts para não perde-las
+-elas existem em TODO O JOGO
+
+OBS: se essa variavel for criada em um objeto X, a instancia desse objeto X tem q ser
+    inicializada antes das des instancias
+OBS: podemos alterar a ordem de inicializaçao das instancias na opção instance creation order,
+    que fica na opção room settings que fica na room
+	
+EX: (no script): global.pontos = 1
+    (no obj, create): show_message("esse é o seu ponto" + global.pontos")
+	(no obj, mouse enter): show_debug_message(global.pontos++1) 
+
+obs: exercicxio interessante sobre essa variavel:  modulo 6 aula 30
+
+- Variaveis de Assets:
+
+-essas são criadas por meio das Variables Definitions
+-essa variavel serve para realizar ações que traram resultados assim que realizadas
+
+
+EX: obj "botão" -> instancia -> Variable Definitions -> variavel asset room de nome "destino"
+Left Pressed: room_got(destino)
+
+RS: vai para a proxima room
+
+
+
+VARIAVEIS INTERNAS:
+
+-speed = define a velocidade de um objeto
+
+-image_angle = define a rotação de um objeto
+
+-image_bland = define a cor de um objeto
+
+-direction = define a direção de um objeto
+
+-room_speed = serve para pegar ou definir a velocidade do jogo (n é recomendado)
+
+-room_width = se referi a largura da room, podendo alterar a largura do room a qualquer momento.
+
+-room_height = se referi a altura da room, podendo alterar a largura do room a qualquer momento.

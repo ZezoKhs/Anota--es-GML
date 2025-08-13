@@ -1,0 +1,10 @@
+
+-LEMBRETES-
+
+Angulos: 
+-não funcionam se estiverem negativos
+-funcionam mesmo acima de 360
+- 0 é igual 360
+
+
+

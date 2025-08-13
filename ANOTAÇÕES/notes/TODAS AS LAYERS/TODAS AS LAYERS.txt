@@ -1,0 +1,9 @@
+
+-LAYER ASSETS
+-serve para colocar sprites na room
+
+-LAYER INSTANCE
+-serve para colocar objetos
+
+-LAYER BACKGROUND
+- serve para adicionar imagens de fundo da room

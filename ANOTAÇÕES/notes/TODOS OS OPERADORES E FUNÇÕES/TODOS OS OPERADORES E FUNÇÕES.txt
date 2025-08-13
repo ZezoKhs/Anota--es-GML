@@ -1,0 +1,199 @@
+
+              ----OPERADORES----
+
+OPERADORES ARITMÉTICOS =  são operadores que fazem contas 
+
++		Adição                         Ele faz a conta de soma
+-		Subtração                      Ele faz a conta de menos
+*		Multiplição                    Ele faz a conta de vezes
+/		Divisão						   Ele faz a conta de dividir
+%		Resto da divisão			   Ele faz o resto da divisão
+=       Igual                          Ele entende algo é igual a outro algo
+
+OBS: se eu quiser que uma operação seja priorizada é so colocar parenteses
+EX: conta: 5*5+(10/2)
+
+
+
+OPERADORES RELACIONADOS = fazem comparaçoes , eles relacionam uma coisa com a outra,
+						  SEMPRE trazendo um RETORNO BOOLEANO, ou seja, ele devolve
+						  um valor que pode ser verdadeiro ou falso 
+						  OBS: esses operadores CHECAM um valor em relação ao outro. 
+						  Trate-os como se fossem perguntas. 
+						  EX: 5 é maior que 3?
+						  
+>		Maior que					  Ele checa se um valor é maior que o outro
+<		Menor que					  Ele checa se um valor é mmenor que o outro
+>=		Maior ou igual                Ele checa se um valor é maior ou igual ao outro    
+<=		Menor ou igual				  Ele checa se um valor é menor ou igual ao outro 
+==		Igual a						  Ele checa se o valor da esquerda é igual ao da direita
+!=      Diferente de                  Ele chega se o valor da esquerda é diferente do da direita
+
+EX: show_message(5>1)
+RS: 1, ou seja, verdadeiro
+
+EX: show_message(9>=5)
+RS: 1, ou seja, verdadeiro
+
+EX: show_message(2==4)
+RS: 0, ou seja, falso
+
+EX: show_message(3!=5)
+RS: 1, ou seja, verdadeiro
+
+
+
+OPERADORES UNÁRIOS = são operadores que so utilizam um lado da conta
+
+++      incremento       aumenta o valor em 1
+--      decremento		 diminui o valor em 1
+
+EX: 
+vida= 5
+vida++;
+show_message(vida);
+
+EX: 
+vida= 5
+vida--;
+show_message(vida);
+
+OBS: NÃO pode colocar valores do lado direito!!
+EX:
+vida= 5
+vida++2;
+show_message(vida);
+
+
+
+FUNÇÕES CONDICIONAIS =  funcionam apartir de uma condição
+
+if           se                
+else         caso contrario
+else if      senão se
+
+Ex:
+   if (altura >= 1.80) 
+    {show_message("você é alto!")}
+
+   else if (altura >= 1.60)
+   {show_message("você é mediano")}
+   
+   else 
+   {show_message("você é baixo")};
+
+OBS: sempre tem que usar as chasves { } dessa forma
+OBS: o if funciona sem o else, mas, o else não funciona sem o if. O mesmo ocorre com o else if
+
+
+
+FUNÇÕES CONDICIONAIS ANINHADA =  são funções condicionais normais, so que dentro de outras funções condicionais
+
+Ex:
+
+tem_dinheiro = show_question("voce tem dinheiro para pagar a conta?);
+
+if (tem_dinheiro == true)
+{
+
+  quer_pagar = show_question("voce quer pagar a conta?);
+
+  if (quer_pagar == true)
+  {show_message("voce pagou a conta")}
+  
+  else 
+  {show_message("folgadinho voce hein");
+   
+}
+
+
+
+
+
+
+OPERADORES LOGICOS = possuem retornos booleanos,porem, no entanto,
+                     eles so fazem operações com valores booleanos
+					
+&& (and)     E       ele checa se todos os valores são verdadeiros, se todos forem 
+                   verdadeiros (true) ele retorna true. Caso contrario ele retorna false
+ 
+|| (or)      OU      ele checa se algum dos valores é verdadeiro, se ao menos um for verdadeiro,
+                   ele retorna true. se todos os valores foram falsos ele retorna false
+	
+! (not)      NÃO     ele inverte um valor booleano, ou seja, se um valor for true ele vira false,
+                    se for false ele vira true. (so serve para valores boleanos!)
+					
+				  
+--EXEMPLOS && (and)--                                                                                               
+
+EX: true && true && true = true
+             ou
+    true and true and true = true
+
+EX: true && false = false
+    true and false and true = false
+
+-EX atv:
+
+ dinheiro = show_question("voce tem dinheiro?")
+ fome = show_question("voce esta com fome?")
+ 
+ if dinheiro && fome 
+{show_message("voce pode comprar um cachorro quente")}
+
+else
+{show_message("voce não pode comprar cachorro quente")};
+
+
+--EXEMPLOS || (or)--
+
+EX: false||false||true = true
+             ou
+    false or false or true = true
+
+EX: false||false||false= false
+    false or false or false = false
+
+-EX atv:
+
+ 
+ dinheiro = show_question("vc tem dinheiro?")
+ fiado = show_question (" o vendedor vende fiado?")
+ 
+if dinheiro||fiado
+ {show_message("vc pode comprar um cachorro quente :)")}
+ 
+ else 
+ {show_message("vc não pode comprar um cachorro quente")};
+ 
+
+--EXEMPLOS ! (not)--
+
+ player_alive = true;
+ level_complete = false;
+
+if (!player_alive && !level_complete)
+{show_message("O jogador está morto e o nível não está completo.")};
+
+-EX atv:
+
+move = !move
+
+                           é a mesma coisa que:
+
+if mover == true
+{
+mover = false
+}
+else 
+{
+mover = true
+}
+
+
+-MOD
+mod é o operador de módulo. Ele retorna o resto da divisão entre dois números.
+Isso é útil para garantir que valores fiquem dentro de certos intervalos, como ao trabalhar com ângulos.
+Por exemplo, ao usar o operador mod, você pode garantir que um ângulo sempre fique dentro do intervalo de 0 a 359 graus
+
+Ex: angle = (angle + 180) mod 360

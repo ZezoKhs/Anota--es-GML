@@ -1,0 +1,104 @@
+
+
+* os eventos seguem uma ordem de ação
+
+* clicando com o botão direito sobre um evento e clicar no nome
+  Changes Event podemos trocar o evento sem mudar os codigos 
+
+
+CREATE
+
+- create é sempre o primeiro evento que uma instancia vai rodar
+
+DESTROY
+
+
+
+CLEAN UP
+
+
+
+STEP
+
+-step é um evento que roda a cada frame, ou seja, roda o tempo todo
+
+-begin step roda antes do step
+
+-end step roda depois do step
+
+
+
+
+ALARM
+
+-esse é um evento de tempo
+-ele funciona como um alarme qualquer mesmo
+-vc "ativa" ele e depois de um tempo ele "toca"
+-esse so funciona quando ele é iniciado no create com essa variavel interna "alarm[o numero do seu alarme] = frames"
+Obs = 60 frames é igual 1 segundo
+duvidas aula 41 modulo 6
+
+
+
+DRAW
+
+-draw faz desenhos no seu jogo (ex: o bala de uma arma)
+esse evento é usada para desenhar a sprite no jogo
+ao usa-la a jogo entende que vc vai fazer a sprite daquele obj manualmente
+para trazer de volta a sprite original do obj, basta escrever o codigo "draw_self()"
+
+
+-draw GUI faz desenhos na janela do seu jogo, é a interface do usuario (ex: pontos e vida)
+esse evento são informações necessarias para o jogador
+
+MOUSE
+
+- left down funciona o tempo todo quando pressionamos o botão esquerdo na instancia
+- right down funciona o tempo todo quando pressionamos o botão direito na instancia
+- middle down funciona o tempo todo quando pressionamos o botão central na instancia
+
+
+- left pressed funciona uma vez quando clicamoso o botão esquerdo na instancia
+- right pressed funciona uma vez quando clicamos o botão direito na instancia
+- middle pressed funciona uma vez quando clicamoss o botão central na instancia
+
+
+- left released so funciona quando soltamos o botão esquerdo na instancia
+- right released so funciona quando soltamos o botão direito na instancia
+- middle released so funciona quando soltamos o botão central na instancia
+
+
+- mouse enter funciona sempre que o mouse passar por cima da instancia
+- mouse leave funciona sempre que o mouse sair da instancia
+
+- global funciona como qualquer dos anteriores, porem, esse funciona quando clicamos na em qualquer lugar da tela
+
+KEY DOWN
+
+- funciona o tempo todo quando pressionamos o botão
+
+
+KEY PRESSED
+
+- funciona uma vez quando pressionamos o botão
+
+
+KEY UP
+
+- so funciona quando soltamos o botão
+
+
+GESTURE
+
+
+
+COLLISION
+
+
+
+OTHER
+
+
+
+ASYNCHRONOUS
+

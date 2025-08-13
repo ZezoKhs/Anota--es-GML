@@ -1,0 +1,106 @@
+
+OBESERVAÇÃO: os codigos são lidos pelo programa de cima para baixo da esquerda para a direita
+
+AVISO: o erro Not Set Before Reading It, indica que algum codigo não esta na ordem certa
+
+
+
+; = indica que o comando foi finalizado
+
+
+
+-SHOW_MESSAGE = cria um texto
+
+str = string = texto q prcisa estar entre aspas
+OBS: o show_message não consegue somar string(texto) com valores real 
+
+Ex:show_messange("bom dia")
+
+OBS: para colocar numeros no show_message não pode colocar aspas  " so se haver letras
+OBS:  numeros quebradas são feitos com . ao inves de , 
+EX: show_message(5.5)
+EX: show_message("sua idadade:", 10)
+
+
+
+- GET_STRING = serve para coletar valores strings, ou seja, textos
+
+EX:
+nome = get_string("Digite seu nome:");
+show_message("Olá, " + nome + "!");
+ 
+
+
+
+- GET_STRING_ASYNC = faz o mesmo que o get string anterior, porem, este não trava o jogo durante seu uso
+
+
+
+- GET_INTEGER = serve para coletar valores reais, ou seja, numeros (mas apenas numeros inteiros)
+
+EX: 
+idade = get_integer("Digite sua idade:");
+show_message("Sua idade é: " + string(idade));
+
+
+
+- STRING = serve para juntar valores reais e strings em um so comando
+
+EX:
+nome = get_string("seu nome: ","kauã");
+idade = get_integer("qual a sua idade?", 44)
+show_message("seu nome: " + nome + " sua idade: " + string(idade));
+
+RS: no final de tudo vai aparecer uma tela com o nome e a idade
+OBS: strings(textos) não podem ser somadas com reais, para isso se usa o comando string
+
+
+-SHOW_QUESTION (dados boelanos)= serve para salvar coisas como escolhas 
+
+EX:
+pergunta= show_question("voce quer jogar?");
+show_message(pergunta);
+
+RS:vai surgir essa pergunta e duas opçoes (sim ou não)
+
+OBS: verdadeiro ou falso, 1 ou 0, true ou false
+
+
+
+-SHOW_DEBUG_MESSAGE = mostra mensagens no output
+
+
+-DRAW_SELF = desenha a propria sprite do objeto
+
+
+-DRAW_TEXT = desenha textos em um determinada posição de cada instancia daquele obj
+
+-podendo desnhar strings ou numeros real
+
+
+-ROOM_GOTO_NEXT = passa para a proxima room
+
+
+-ROOM_GOTO =  faz o mesmo que a anterior, porem, esta depende de uma variavel
+
+
+-KEYBORD_CHECK = checa se aquela tecla esta sendo pressionada
+
+- normalmente se usa o if para esse codigo
+
+-KEYBORD_CHECK(ord) = checa se alguma letra especifica esta sendo pressionada
+
+
+-KEYBORD_CHECK(vk_) = checa se alguma tecla especifica (sem ser letras) esta sendo pressionada
+
+
+-ROOM_GET_SPEED = serve para definir ou pegar a velocidade(fps) da room (não é recomendado)
+
+
+
+
+
+
+
+
+

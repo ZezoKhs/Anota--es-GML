@@ -1,0 +1,9 @@
+
+-AUDIO_PLAY_SOUND(som)
+-é um comando que emite sons
+-OBS:seja a aula 29 do modulo 8
+
+
+-AUDIO_PAUSE_SOUND(som)
+-pausa todos os sons antes do que for selecionado nas ()
+-evita que os sons fiquem um em cima do outro
